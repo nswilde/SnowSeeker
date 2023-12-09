@@ -12,10 +12,12 @@ struct SkiDetailsView: View {
     
     var body: some View {
         Group {
-            Text("Elevation")
-                .font(.caption.bold())
-            Text("\(resort.elevation)m")
-                .font(.title3)
+            VStack {
+                Text("Elevation")
+                    .font(.caption.bold())
+                Text("\(resort.elevation)m")
+                    .font(.title3)
+            }
         }
         
         VStack {
